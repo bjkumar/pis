@@ -1,0 +1,240 @@
+.smallred {
+        padding: 0px;
+    margin: 0px;
+    text-align: left;
+    color: red;
+}
+.clyel{
+    background: #a19f20;
+padding: 3px;
+border-radius: 3px;
+border: 1px solid #a1a1a1;
+}
+.clgrn{
+  background: #278f07;
+padding: 3px;
+border-radius: 3px; 
+border: 1px solid #a1a1a1;
+}
+.cl_yellow{
+    background: #f8f7b7;
+} 
+.please_wait {   
+    background: rgba(255, 255, 255, 0.8) none;
+
+ 
+color:#000000;
+   position: absolute;
+   top: 0;
+   bottom:0;
+min-height:690px;
+width:100%;
+text-align:center;
+   z-index: 99999;
+ display:none; 
+}
+.please_wait p {    
+margin: 193px auto;    
+overflow: hidden;    
+width: 99%;
+}
+.please_wait p img {max-width:30%;
+/*display:none;*/
+} 
+.please_wait p span {
+color:#414141;
+font-size:2em;
+display:none;
+font-weight:700;
+}
+ .loading {
+     color: black;
+    font-size: 18px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 340px;
+ }
+.profile_pic > input {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.profile_pic {
+    position: relative;
+}
+#pro_img {
+    width: 71px;
+    height: 68px;
+}
+.div_hide{
+    display:none;
+}
+.div_inherit {
+   display: inherit; 
+}  
+.red_select_alert{
+    color: #E74C3C;
+    font-size:12px;
+   /* margin-top: 33px;*/
+}
+.red_select_alert1{
+    color: #E74C3C;
+    font-size:12px;
+   margin-top: 33px;
+}
+.red_text_alert {
+    color: #E74C3C;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.edit_viewed {
+   background-color: #f9f9f9; 
+} 
+.edit_non_viewed{
+   color:black;
+   font-weight: bold;
+}
+.my_red_alert{
+    font-size: 11px;
+color: red;
+font-weight: 300;
+}
+#chat-box {
+    height: 100%;
+    max-height: 270px;
+    overflow-y: scroll;
+    padding-left: 14px;
+}
+.chat-box-row {
+    display: table-row;
+}
+ .chat-box-row div {
+    display: table-cell;
+    padding:5px;
+    color: white;
+}
+.chat-box-row div span{
+    margin-left: 5px;
+}
+.pr_cht{
+ display: block;
+padding-top: 4px;
+clear:both;
+cursor:pointer;
+}
+ .sms_right {
+        float: right;
+        background: #f3fcf8;
+        max-width: 80%;
+        border-radius: 5px;
+        padding: 2px 10px;
+        margin: 5px;
+    }
+    .sms_left {
+        float: left;
+        background: #f8f8f8;
+        max-width: 80%;
+        border-radius: 5px;
+        padding: 2px 10px;
+        margin: 5px;
+    }
+    .badge {
+        padding: 1px 1px 2px 2px;}
+    .row.chat_box_div {
+        height: 100%;
+        max-height: 570px;
+        min-height: 200px;
+        max-width: 715px;
+        /* overflow-y: auto; */
+        overflow-y: scroll; 
+        border: 1px solid #e4e4e4; 
+    } 
+    
+    .x_title span {
+   color: #076905;
+}
+.recvr_img_chat{
+    width:33px;
+    height:35px;
+    border-radius: 20px;
+    border: 1px solid rgba(52,73,94,.44);
+   /*padding: 6px 0px 8px 1px;*/
+    background: #c3c3c3;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing:border-box;
+    vertical-align: middle;
+}
+.recvr_img_chat > img{
+    display: block;
+    max-width:100%;
+}
+.x_title {
+    padding: 1px 5px 11px;
+}
+.emoji-wysiwyg-editor{
+       background: #9e9e9e12; 
+}
+.btn-primary {
+    color: #3a3535;
+    background-color: #d2d3d4;
+    border-color: #c5c5c5;
+   /* width: 715px;*/
+}
+.online_green {
+    color: #f0f8ff00;
+background: green;
+padding: 1px;
+border-radius: 17px;
+padding-left: 3px;
+padding-right: 8px;
+}
+.online_yellow {
+    color: #f0f8ff00;
+background: #d6e30a;
+padding: 1px;
+border-radius: 17px;
+padding-left: 3px;
+padding-right: 8px;
+}
+#online_status{
+    margin-left: 12%;
+}
+#last_seen_time {
+ margin-left: 10%;   
+ width: 241px;
+} 
+.tm_hstry{
+    display:block; 
+    font-size:9px;
+    color: #c1c1c9;
+}
+
+.tm_hstryRyt{
+    display:block; 
+    font-size:9px;
+    color: #c1c1c9;
+    text-align: right;
+}
+.upper_chat_box {
+    display: table-row;
+}
+.upper_chat_box div {
+    display: table-cell;
+    padding: 0 6px;
+    margin: 0;
+    vertical-align: top;
+    cursor:pointer;
+}
+.upper_chat_box div .time{
+    font-size: 9px;
+    float:right;
+}
