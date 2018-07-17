@@ -1,0 +1,76 @@
+added on, Delivered date, 
+
+CID-> Where will come from                    Done
+
+Resolution date, delivered date should be heigher   Done
+
+QC hour should not mandatory           Done
+
+Additional developement hours add in total hour     Done
+
+
+  $("#billing_hour").keyup(CheckTotalHour);
+
+function CheckTotalHour_rpm() {
+    var billing_hour = $("#billing_hour_rpm").val();
+    var qc_hour = $("#qc_hour_rpm").val();
+    var total_hour = '';
+    total_hour = +billing_hour + +qc_hour;
+    $("#total_hour_rpm").val(total_hour);
+    $("#actual_hour_rpm").val(total_hour);
+}
+
+
+<script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+  <script src="<?php echo SITE_URL; ?>asset/javascript/group_chat.js"></script>  
+
+<a onclick="Hit_Server();"> Go </a>
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function () {
+    Pusher.logToConsole = true;
+
+    var pusher = new Pusher('127a9e8e9fb64bacfebc', {
+        cluster: 'ap2',
+        encrypted: true
+    });
+
+    var channel = pusher.subscribe('my-channel');
+    channel.bind('my-event', function (data) {
+        alert(data.chat_message);
+    });
+});
+
+
+
+function Hit_Server() {
+    var m_data = new FormData();
+    m_data.append('chat_message', 'hello Binod ji');      
+    m_data.append('sender_id', '21');
+    m_data.append('receiver_id', '32');
+
+    $.ajax({
+
+        url: SITE_URL + 'Ctl_group_chat/Send_Message',
+        type: 'POST',
+        dataType: 'html',
+        data: m_data,
+        processData: false,
+        contentType: false,
+        beforeSend: function () {
+           // alert('no');
+        },
+        success: function (data) {
+        }
+    });
+
+}
+
